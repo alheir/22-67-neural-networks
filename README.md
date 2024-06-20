@@ -10,7 +10,9 @@
       - [Resultados](#resultados)
       - [Links](#links)
     - [TP3 - CIFAR100 Challenge (CNN)](#tp3---cifar100-challenge-cnn)
+      - [Consigna](#consigna-1)
       - [Implementación](#implementación-1)
+      - [Data augmentation](#data-augmentation)
         - [Modelo](#modelo-1)
       - [Resultados](#resultados-1)
       - [Links](#links-1)
@@ -26,8 +28,6 @@ Repositorio para los Trabajos Prácticos y afines de la materia *22.67 - Redes N
 ### TP2 - CIFAR100 Challenge (MLP)
 
 #### Consigna
-
-*
 
 #### Implementación
 
@@ -57,13 +57,36 @@ model: "sequential"
 
 #### Links
 
-[nbviewer (last commit)](https://nbviewer.org/github/alheir/22-67-neural-networks/blob/main/tp_02_cifar100_cnn.ipynb)
+[nbviewer (last commit)](https://nbviewer.org/github/alheir/22-67-neural-networks/blob/main/tp_02_cifar100_mlp.ipynb)
 
 Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/competitions/itba-cifar-100-2024-q-1](https://kaggle.com/competitions/itba-cifar-100-2024-q-1)
 
 ### TP3 - CIFAR100 Challenge (CNN)
 
+#### Consigna
+
 #### Implementación
+
+#### Data augmentation
+
+Se aplica una secuencia de transformaciones al dataset original con el fin de aumentar el dataset efectivo con el que se entrena el modelo. De un dataset inicial de 50k imágenes, aplicando las transformaciones 4 veces, se arma una dataset final de 250 imágenes, incluyendo las originales sin modificaciones.
+
+
+Dichas transformaciones, aplicadas en orden aleatorio, son la siguientes:
+
+1. Flip horizontal
+2. Rotación aleatoria entre -25° y 25°
+3. Entre 2 y 5 de los siguientes efectos, aplicados en orden aleatorio:
+   1. Traslación en X, entre -5px y 5px
+   2. Traslación en Y, entre -5px y 5px
+   3. Escalamiento en X e Y, entre .9 y 1.1
+   4. Crop and pad: recorte y relleno de entre -2px y 2px en cualquier borde.
+   5. Suma entre -.15 y .15 a cada píxel (escalados de 0.0 a 1.0), aplicado por canal con p = .5
+   6. Multiplicación entre .95 y 1.15 a cada píxel (escalados de 0.0 a 1.0), aplicado por canal con p = .5
+   7. Factor de contraste, entre .8 y 1.4
+   8. Relleno random con rectángulos de ruido gaussiano; entre 1 y 4, cada uno del 10% del tamañao de la imagen.
+
+![alt text](docs/data_aug_example.png)
 
 ##### Modelo
 
