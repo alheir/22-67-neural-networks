@@ -2,36 +2,36 @@
 
 - [22-67-neural-networks](#22-67-neural-networks)
   - [Descripción](#descripción)
-    - [TP1 - Clasificador de Texto](#tp1---clasificador-de-texto)
-    - [TP2 - CIFAR100 Challenge (MLP)](#tp2---cifar100-challenge-mlp)
-      - [Consigna](#consigna)
-      - [Implementación](#implementación)
-        - [Modelo](#modelo)
-      - [Resultados](#resultados)
-      - [Links](#links)
-    - [TP3 - CIFAR100 Challenge (CNN)](#tp3---cifar100-challenge-cnn)
-      - [Consigna](#consigna-1)
-      - [Implementación](#implementación-1)
-      - [Data augmentation](#data-augmentation)
-        - [Modelo](#modelo-1)
-      - [Resultados](#resultados-1)
-      - [Links](#links-1)
-    - [TP4 - Clasificador de Texto (CNN)](#tp4---clasificador-de-texto-cnn)
+  - [TP1 - Clasificador de Texto](#tp1---clasificador-de-texto)
+  - [TP2 - CIFAR100 Challenge (MLP)](#tp2---cifar100-challenge-mlp)
+    - [Consigna](#consigna)
+    - [Implementación](#implementación)
+      - [Modelo](#modelo)
+    - [Resultados](#resultados)
+    - [Links](#links)
+  - [TP3 - CIFAR100 Challenge (CNN)](#tp3---cifar100-challenge-cnn)
+    - [Consigna](#consigna-1)
+    - [Implementación](#implementación-1)
+    - [Data augmentation](#data-augmentation)
+      - [Modelo](#modelo-1)
+    - [Resultados](#resultados-1)
+    - [Links](#links-1)
+  - [TP4 - Clasificador de Texto (CNN)](#tp4---clasificador-de-texto-cnn)
 
 
 ## Descripción
 
 Repositorio para los Trabajos Prácticos y afines de la materia *22.67 - Redes Neuronales* de la carrera Ingeniería Electrónica del Instituto Tecnológico Buenos Aires (ITBA).
 
-### TP1 - Clasificador de Texto
+## TP1 - Clasificador de Texto
 
-### TP2 - CIFAR100 Challenge (MLP)
+## TP2 - CIFAR100 Challenge (MLP)
 
-#### Consigna
+### Consigna
 
-#### Implementación
+### Implementación
 
-##### Modelo
+#### Modelo
 
 model: "sequential"
 
@@ -48,26 +48,26 @@ model: "sequential"
 **Trainable params:** 3,722,852 (14.20 MB)  
 **Non-trainable params:** 0 (0.00 B)
 
-#### Resultados
+### Resultados
 
 * Train loss: 2.870164155960083
 * Train acc: 0.3100999891757965
 * Val loss: 3.2455174922943115
 * Val acc: 0.23749999701976776
 
-#### Links
+### Links
 
 [nbviewer (last commit)](https://nbviewer.org/github/alheir/22-67-neural-networks/blob/main/tp_02_cifar100_mlp.ipynb)
 
 Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/competitions/itba-cifar-100-2024-q-1](https://kaggle.com/competitions/itba-cifar-100-2024-q-1)
 
-### TP3 - CIFAR100 Challenge (CNN)
+## TP3 - CIFAR100 Challenge (CNN)
 
-#### Consigna
+### Consigna
 
-#### Implementación
+### Implementación
 
-#### Data augmentation
+### Data augmentation
 
 Se aplica una secuencia de transformaciones al dataset original con el fin de aumentar el dataset efectivo con el que se entrena el modelo. De un dataset inicial de 50k imágenes, aplicando las transformaciones 4 veces, se arma una dataset final de 250k imágenes, incluyendo las originales sin modificaciones.
 
@@ -88,7 +88,7 @@ Dichas transformaciones, aplicadas en orden aleatorio, son la siguientes:
 
 ![alt text](docs/data_aug_example.png)
 
-##### Modelo
+#### Modelo
 
 model: "sequential"
 
@@ -129,20 +129,20 @@ model: "sequential"
 **Trainable params:** 13,545,700 (51.67 MB)  
 **Non-trainable params:** 3,584 (14.00 KB)
 
-#### Resultados
+### Resultados
 
 * Train loss: 0.1687
 * Train acc: 0.9463
 * Val loss: 0.7888
 * Val acc: 0.8052
 
-#### Links
+### Links
 
 [nbviewer (last commit)](https://nbviewer.org/github/alheir/22-67-neural-networks/blob/main/tp_02_cifar100_cnn.ipynb)
 
 Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/competitions/itba-cifar-100-2024-q-1](https://kaggle.com/competitions/itba-cifar-100-2024-q-1)
 
-### TP4 - Clasificador de Texto (CNN)
+## TP4 - Clasificador de Texto (CNN)
   
 
 
