@@ -69,7 +69,7 @@ Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/com
 
 #### Data augmentation
 
-Se aplica una secuencia de transformaciones al dataset original con el fin de aumentar el dataset efectivo con el que se entrena el modelo. De un dataset inicial de 50k imágenes, aplicando las transformaciones 4 veces, se arma una dataset final de 250 imágenes, incluyendo las originales sin modificaciones.
+Se aplica una secuencia de transformaciones al dataset original con el fin de aumentar el dataset efectivo con el que se entrena el modelo. De un dataset inicial de 50k imágenes, aplicando las transformaciones 4 veces, se arma una dataset final de 250k imágenes, incluyendo las originales sin modificaciones.
 
 
 Dichas transformaciones, aplicadas en orden aleatorio, son la siguientes:
