@@ -12,11 +12,14 @@
   - [TP3 - CIFAR100 Challenge (CNN)](#tp3---cifar100-challenge-cnn)
     - [Consigna](#consigna-1)
     - [Implementación](#implementación-1)
-    - [Data augmentation](#data-augmentation)
+      - [Data augmentation](#data-augmentation)
       - [Modelo](#modelo-1)
     - [Resultados](#resultados-1)
     - [Links](#links-1)
-  - [TP4 - Clasificador de Texto (CNN)](#tp4---clasificador-de-texto-cnn)
+  - [TP4 - Clasificador de Texto (RNN)](#tp4---clasificador-de-texto-rnn)
+    - [Consigna](#consigna-2)
+    - [Resultados](#resultados-2)
+    - [Links](#links-2)
 
 
 ## Descripción
@@ -67,10 +70,9 @@ Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/com
 
 ### Implementación
 
-### Data augmentation
+#### Data augmentation
 
 Se aplica una secuencia de transformaciones al dataset original con el fin de aumentar el dataset efectivo con el que se entrena el modelo. De un dataset inicial de 50k imágenes, aplicando las transformaciones 4 veces, se arma una dataset final de 250k imágenes, incluyendo las originales sin modificaciones.
-
 
 Dichas transformaciones, aplicadas en orden aleatorio, son la siguientes:
 
@@ -142,7 +144,22 @@ model: "sequential"
 
 Carlos Selmo. (2024). ITBA - CIFAR 100 - 2024Q1. Kaggle. [https://kaggle.com/competitions/itba-cifar-100-2024-q-1](https://kaggle.com/competitions/itba-cifar-100-2024-q-1)
 
-## TP4 - Clasificador de Texto (CNN)
-  
+## TP4 - Clasificador de Texto (RNN)
 
+### Consigna
 
+Clasificador de texto en base a *20 Newsgroups*, implementado con *Reccurent Neural Networks*.
+
+### Resultados
+
+* Training Accuracy: 0.9607
+* Validation Accuracy: 0.6832
+* Test Accuracy: 0.6187
+
+* Training Loss: 0.3624
+* Validation Loss: 1.4072
+* Test Loss: 1.6104
+
+### Links
+
+[nbviewer (last commit)](https://nbviewer.org/github/alheir/22-67-neural-networks/blob/main/tp_04.ipynb)
